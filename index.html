@@ -44,7 +44,7 @@
 
             <!-- Botão -->
             <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/E3ojPMv" class="a-btn" style="text-decoration: none;">
+              <a href="https://pay.kiwify.com.br/157P5ro" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">QUERO OBTER ACESSO!</span>
                 <span class="span-btn2">(atenção: vagas limitadas)</span>
               </a>
@@ -65,5 +65,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./assets/js/com.js"></script>
+
+    <script type="text/javascript">
+      //Botão direito
+       document.oncontextmenu = function(){return false;}
+    </script>
+
+    <script type="text/javascript">
+      // Seleção de texto
+      function evitarSeleccion( target ) {
+         if ( typeof target.onselectstart != "undefined" ) {
+            target.onselectstart = function( ) { return false; }
+         }
+         else if ( typeof target.style.MozUserSelect != "undefined" ) {
+            target.style.MozUserSelect = "none"
+         }
+         else {
+            target.onmousedown = function( ) { return false; }
+         }
+         target.style.cursor = "default"
+      } 
+      evitarSeleccion( document.body ); 
+    </script>
+
+
+    <script>
+      //Atalhos teclado
+      document.onkeypress = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {return false;}
+      if (event.keyCode == 93) {return false;}
+      if (event.keyCode == 85) {return false;}
+      if (event.keyCode == 80) {return false;}
+      if (event.keyCode == 73) {return false;}   
+      }
+      document.onmousedown = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {return false;}
+      if (event.keyCode == 93) {return false;}
+      if (event.keyCode == 85) {return false;}
+      if (event.keyCode == 80) {return false;}
+      if (event.keyCode == 73) {return false;}  
+      }
+      document.onkeydown = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {return false;}
+      if (event.keyCode == 93) {return false;}
+      if (event.keyCode == 85) {return false;}
+      if (event.keyCode == 80) {return false;}
+      if (event.keyCode == 73) {return false;}
+      }
+    </script>
+
   </body>
 </html>
